@@ -35,7 +35,7 @@ The plugin ships a `.mcp.json` that wires up the stdio server automatically — 
 ## Manual setup (Claude Desktop / other MCP clients)
 
 ```bash
-pip install git+https://github.com/kinance/stripe-agents-mcp.git
+pip install stripe-agents-mcp
 ```
 
 Add to your MCP client config:
