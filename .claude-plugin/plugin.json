@@ -1,0 +1,8 @@
+{
+  "name": "stripe-agents-mcp",
+  "description": "25 Stripe API tools for Claude Code — manage customers, invoices, subscriptions, payments, refunds, disputes, and more via the Stripe MCP server.",
+  "author": {
+    "name": "kinance",
+    "url": "https://github.com/kinance/stripe-agents-mcp"
+  }
+}
