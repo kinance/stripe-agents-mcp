@@ -18,19 +18,27 @@ MCP server exposing 25 Stripe API tools for Claude and other MCP-compatible agen
 | Disputes | `list_disputes`, `update_dispute` |
 | Utilities | `search_stripe_resources`, `fetch_stripe_resources`, `search_stripe_documentation` |
 
-## Setup
+## Install via Claude Code
 
-```bash
-pip install stripe-agents-mcp
+```
+/plugin install stripe-agents-mcp@kinance
 ```
 
-Set your Stripe secret key (prefer a restricted key `rk_*`):
+Then set your Stripe secret key in the environment where Claude Code runs:
 
 ```bash
 export STRIPE_SECRET_KEY=sk_live_...
 ```
 
-## Claude Desktop configuration
+The plugin ships a `.mcp.json` that wires up the stdio server automatically — no manual config needed after install.
+
+## Manual setup (Claude Desktop / other MCP clients)
+
+```bash
+pip install git+https://github.com/kinance/stripe-agents-mcp.git
+```
+
+Add to your MCP client config:
 
 ```json
 {
